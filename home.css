@@ -1,0 +1,274 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+ #cssmenu {
+    background: #000;
+    width: auto;
+    overflow: hidden;
+  	position: fixed; /* Set the navbar to fixed position */
+  	top: 0; /* Position the navbar at the top of the page */
+  	right: 0;
+
+}
+#cssmenu p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    zoom: 1;
+}
+#cssmenu p:after {
+    content:' ';
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#cssmenu p {
+    float: left;
+    display: block;
+    padding: 0;
+}
+
+#cssmenu p a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 15px 15px;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    transition: color .25s;
+}
+#cssmenu p a:hover {
+    color: #ff7800;
+}
+#cssmenu p a:hover:before {
+    width: 100%;
+}
+#cssmenu p a:after {
+    content:'';
+    display: block;
+    position: absolute;
+    right: -3px;
+    top: 19px;
+    height: 6px;
+    width: 6px;
+    background: #fff;
+    opacity: .5;
+}
+#cssmenu p a:before {
+    content:'';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #ff7800;
+    transition: width .25s;
+}
+#cssmenu p.last > a:after, #cssmenu p:last-child > a:after {
+    display: none;
+}
+#cssmenu p.active a {
+    color: #ff7800;
+}
+#cssmenu p.active a:before {
+    width: 100%;
+}
+
+/* Navbar */
+
+.navbar{
+	overflow: hidden;
+  	background-color: #0000003d;
+  	position: fixed; /* Set the navbar to fixed position */
+  	top: 0; /* Position the navbar at the top of the page */
+  	width: 100%;
+  	display: inline-block;
+  	padding: 0;
+}
+
+.navbar_para{
+	font-variant-caps: small-caps;
+	text-align: center;
+}
+
+.navbar_links{
+	color: #fff;
+	text-decoration: #fff;
+	font-size: 2rem;
+	padding: 0em 0.4em;
+}
+
+.navbar_links:hover{
+	color: #f2bb16;
+}
+
+.name{
+	background-image: url(name_background.jpg);
+	height: 23em;
+}
+
+h1{
+	text-align: center;
+	font-size: 350%;
+	font-family: Courier;
+	padding-top: 2em;
+	font-weight: bolder;
+}
+
+body section div{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Objective */
+
+.objective_details{
+	font-size: 2em;
+}
+
+/* EDUCATION */
+
+li{
+	font-size: 1.6em;
+}
+
+.education_hoverable:hover{
+	background-color: #9f8e8e82;
+}
+
+/* Internship & Training */
+
+.training_details{
+	font-size: 1.4em;
+}
+
+/* Project */
+
+.project_details{
+	font-size: 1.4em;
+	text-align: left;
+}
+
+/* Certifications */
+
+.certifications{
+	 font-size: 450%;
+	 background-image: url(certifications_background.jpg);
+	 width: 100%;
+	 display: inline-block;
+	 color: #fff;
+	 padding: 0.8em 0em; 
+}
+
+/* Others*/
+
+.others{
+	display:grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+	padding: 5px;
+}
+
+.others_details{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.others_details_details{
+	font-size: 1.3em;
+}
+
+.others_details_details:hover{
+	background-color: #000;
+	color: #fff;
+	border-radius: 3em;
+}
+
+/* Footer */
+details{
+	padding: 30px 0px 20px 20px;
+	font-weight: bolder;
+}
+
+.footer{
+	display: flex;
+	background-color:#000;
+	color: #fff;
+	width: 100%;
+}
+
+.form_back{
+	background: #fff1f1;
+    color: #000;
+    padding: 20px;
+    margin: 8px;
+    border-radius: 20px;
+}
+
+form{
+	display: block;
+	text-align: center;
+}
+
+label{
+	display: block;
+}
+
+.form_input{
+	font-size: 15px;
+}
+
+.form_label{
+	font-size: 20px;
+	padding-top: 5px;
+}
+
+input[type=text] {;
+	color: #000;
+	font-style: oblique;
+}
+
+input[type=text]:focus {
+	border-radius: 20px;
+	border: 3px solid pink;
+	color: #000;
+	font-style: oblique;
+}
+
+input[type=Email]:focus {
+	border-radius: 20px;
+	border: 3px solid pink;
+	color: #000;
+	font-style: oblique;
+}
+
+input[type=Phone]:focus {
+	border-radius: 20px;
+	border: 3px solid pink;
+	color: #000;
+	font-style: oblique;
+}
+
+img{
+	width: 40px;
+}
+
+h2{
+	font-size: 3em;
+}
+
+@media screen and (max-width: 820px){
+	.footer{
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 770px){ 
+	.navbar{
+		display: none;
+	}
+ }  
