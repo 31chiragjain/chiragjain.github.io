@@ -15,12 +15,12 @@
 	<body>
 		<div id='cssmenu' class="navbar">
     		<p class="navbar_para">
-    			<a class="navbar_links" onclick="return alert(this);" href="">Objective </a>
-			     <a class="navbar_links" onclick="return alert(this);" href=""> Education </a>
-			     <a class="navbar_links" onclick="return alert(this);" href=""> Internship & Training </a>
-			     <a class="navbar_links" onclick="return alert(this);" href=""> Project </a>
-			     <a class="navbar_links" onclick="return alert(this);" href=""> Certifications </a>
-     			<a class="navbar_links" onclick="return alert(this);" href=""> Others </a>
+    			<a class="navbar_links"  href="#objective">Objective </a>
+			     <a class="navbar_links" href="#education"> Education </a>
+			     <a class="navbar_links" href="#internship&training"> Internship & Training </a>
+			     <a class="navbar_links" href="#project"> Project </a>
+			     <a class="navbar_links" href="#certifications"> Certifications </a>
+     			<a class="navbar_links"  href="#others"> Others </a>
 		    </p>
    		</div>
 
@@ -30,13 +30,13 @@
    			</div>  
 	
 	        <!-- OBJECTIVE -->
-        <div style="padding: 60px;">
+        <div id = objective style="padding: 30px;">
    		    <h2> Objective </h2>
     	     <p class="objective_details">My objective is to evolve into a capable professional by being associated with a company that will allow me to use my skills in a way that is mutually beneficial for me and my employer and achieve a sustainable growth in life.</p>
         </div>
         
         <!-- EDUCATION -->  
-        <div style="background-image: url(education_background.jpg); padding: 40px 0px;" >
+        <div id = education style="background-image: url(education_background.jpg); padding: 40px 0px;" >
         	<h2> Education </h2>
         	<div class="education_hoverable">
         		<p style="display: inline-block;">
@@ -67,7 +67,7 @@
         </div>
 
         <!-- INTERNSHIP AND TRAINING -->
-        <div style="padding: 30px 0px;">
+        <div id = internship&training style="padding: 30px 0px;">
         	<h2> Internship & Training </h2>
         <div  class="training_details">
             <h3> Volunteer </h3>
@@ -87,26 +87,26 @@
 
 
         <!-- PROJECT -->
-        <div style="background-image: url(project_background.jpg); width: 100%; padding: 30px;" >
+        <div id = project style="background-image: url(project_background.jpg); width: 100%; padding-bottom: 30px;" >
           <h2 style="padding-bottom: 20px;"> Project </h2>
             
-            <h3> Title : Portal Based Smart Billing System for Energy </h3>
+            <h3 style="font-size: 25px;"> Title : Portal Based Smart Billing System for Energy </h3>
                <p class="project_details"> The project is ongoing. We have completed basic study, started to build website and software part of the circuit. </p>
                <p class="project_details"> The aim of the project is to develop a system that has facility to recharge the meter before consumption like “prepaid” and send a SMS alert to energy provider if someone try to tamper the system and disconnects the power supply in a case of non-payment of electricity bills. </p>
                <p class="project_details"> Software tools used are Keil uvision Compiler, Proteus 8 Professional, Arduino IDE, VS Code, Brackets, Local Host, SQL Server. </p>
                <a href="Project/Objective of the project.html" style="padding-right: 2em; font-size: 1.7em;"> Objective of the project </a>
                <a href="Project/Methodology & Software part.html" style="font-size: 1.7em;"> Methodology & Software part </a>
             
-            <h3 style="padding-top: 30px;"> Title : Personal Website </h3>
-               <p class="project_details"> Made a website to test my HTML and CSS skills. Still working on it and there are some problems so improving it. </p>
-               <a href="https://31chiragjain.github.io/home.html" style="padding-right: 50px; font-size: 1.75rem;"> First Attepmt </a>
-               <a href="https://31chiragjain.github.io/chiragjain.github.io/home.html" style="padding-right: 50px; font-size: 1.75rem;"> Second Attepmt </a>
-               <a href="https://31chiragjain.github.io/chiragjain/index.html" style="font-size: 1.7em;"> Third Attepmt </a>
-
+            <h3 style="padding-top: 30px;font-size: 25px;"> Title : Personal Website </h3>
+               <p class="project_details">Made personal website to test my HTML, CSS, JavaScript skills. Still working on it and trying to improving it more. So in first attempt I created a website having number of button which will redirect to other page, in second attempt I created a single page website having more CSS, and JavaScript, in the third attempt I created the website using a template which is having more advanced CSS, JavaScript, jQuery and in the fourth attempt there are multiple single page websites having animations.</p>
+               <a href="https://31chiragjain.github.io/home.html" class="project_details_links"> First Attepmt </a>
+               <a href="https://31chiragjain.github.io/chiragjain.github.io/home.html" class="project_details_links"> Second Attepmt </a>
+               <a href="https://31chiragjain.github.io/chiragjain/index.html" class="project_details_links"> Third Attepmt </a>
+               <a href="https://31chiragjain.github.io/onepagesites/index" class="project_details_links"> Fourth Attepmt </a>
         </div>
 
         <!-- CERTIFICATIONS -->
-        <div>
+        <div id = certifications>
           <a href="Certifications/certifications.html" class="certifications"> CERTIFICATIONS </a>
         </div>
 
@@ -141,7 +141,7 @@
             
           </div>
 
-          <div style="background: #e953ff; border-radius: 1.4em;">
+          <div id = others style="background: #e953ff; border-radius: 1.4em;">
          
              <p class="others_details"> Interests </p>
               
