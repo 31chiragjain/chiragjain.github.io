@@ -154,7 +154,7 @@ li{
 }
 
 .project_details_links{
-	display: grid; 
+	display: inline; 
 	font-size: 1.7rem;
 	padding: 0.5rem;
 }
